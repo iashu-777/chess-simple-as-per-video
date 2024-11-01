@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess 2024 by ashu</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   
+        <script src="/lib/chess.js"></script>
+
+    <link rel="stylesheet" href="/lib/chessboardjs-1.0.0 (1)/css/chessboard-1.0.0.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"
+        integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <p id="total_players">Total Players:0</p>
+    <h1 style="text-align: center;">Chess game</h1>
+    <div id="main-element" class="display-f">
+        <div id="myBoard" style="width: 450px"></div>
+        <div id="buttonsParent" style="display: flex; gap: 20px;">
+            <button data-time="10" class="timer-button">10 Min.</button>
+            <button data-time="15" class="timer-button">15 Min.</button>
+            <button data-time="20" class="timer-button">20 Min.</button>
+        </div>
+    </div>
+    <p id="waiting_text_p" class="display-none">Waiting for opponent to join...</p>
+    <script src="/lib/chessboardjs-1.0.0 (1)/js/chessboard-1.0.0.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
